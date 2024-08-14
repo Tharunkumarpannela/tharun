@@ -1,5 +1,5 @@
---Job Scheduling
-schedule the transformation job to run regularly using scheduled query in Big Query.
+##Job Scheduling
+##schedule the transformation job to run regularly using scheduled query in Big Query.
 
     bq mk --transfer_config \
     --project_id=sample-project-27081998 \
