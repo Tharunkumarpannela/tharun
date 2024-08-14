@@ -20,6 +20,7 @@ This project demonstrates how to manage and analyze customer data using Google B
 # Optimization Techniques
 - Partitioning by subscription date and clustering by frequently filtered fields were used to optimize query performance.
 
-# Scripts
-All scripts and commands used in this project are available in the `/scripts` directory.
+
+#sample data taken from 
+https://drive.google.com/uc?id=1zO8ekHWx9U7mrbx_0Hoxxu6od7uxJqWw&export=download
 
