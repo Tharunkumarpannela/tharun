@@ -22,7 +22,7 @@
          client.query(query).result()
 
 
-  --Create a Cloud Scheduler job:
+  ##Create a Cloud Scheduler job:
 
      gcloud scheduler jobs create pubsub daily-bigquery-job \
      --schedule="0 0 * * *" \
