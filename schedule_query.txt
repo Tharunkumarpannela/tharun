@@ -1,0 +1,12 @@
+--Job Scheduling
+schedule the transformation job to run regularly using scheduled query in Big Query.
+
+    bq mk --transfer_config \
+    --project_id=sample-project-27081998 \
+    --target_dataset=sample_project \
+    --display_name='Scheduled Customer Data Transformation' \
+    --data_source=schedule \
+    --params='{"query":"CREATE OR REPLACE TABLE `sample-project-27081998.sample_project.transformed_customer` AS SELECT Index, CustomerId, First_Name, Last_Name, Company, City, Country, REGEXP_REPLACE(Phone_1, r\'\\D\', \'\') AS Clean_Phone_1, REGEXP_REPLACE(Phone_2, r\'\\D\', \'\') AS Clean_Phone_2, LOWER(Email) AS Clean_Email, PARSE_DATE(\'%d-%m-%Y\', Subscription_Date) AS Subscription_Date, Website FROM `sample-project-27081998.sample_project.sample_customer` WHERE Email IS NOT NULL AND Subscription_Date IS NOT NULL;", "destinationTableName":"transformed_customer", "writeDisposition":"WRITE_TRUNCATE", "partitioningField":"Subscription_Date", "partitioningType":"DAY"}' \
+    --schedule="every day 00:00"
+
+
