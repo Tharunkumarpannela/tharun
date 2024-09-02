@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Olympics Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* Light gray background for a modern look */
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3A3A8A; /* Dark blue header for a more vibrant appearance */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #3A3A8A; /* Matching submit button color with the header */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #2c2c7a; /* Slightly darker shade on hover */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666; /* Slightly darker footer text for better contrast */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Olympics Data Upload</h1>
+    </div>
+    <div class="container">
+        <h2>Upload File to GCS</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2024. All rights reserved.
+    </div>
+</body>
+</html>
