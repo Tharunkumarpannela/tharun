@@ -5,9 +5,13 @@ This project describes how to collect the raw data, How the user can upload the 
 Once the data is loaded into the big query table, used this data to visualize into the Looker studio.
 
 Tools Used:
-Kaggle (To collect the sample Raw data)
+Kaggle (To collect the sample Raw data),
 Python Flask, HTML (To Create web portal)
-CLoud storage (To store the data into the Bucket)
-Cloud run function
-Big query
-Looker studio
+CLoud storage (To store the data into the Bucket),
+Cloud run function,
+Big query,
+Looker studio,
+
+
+<img width="506" alt="image" src="https://github.com/user-attachments/assets/80e790f0-c74e-40e2-9863-c193a1dc0b69">
+
